@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/plantenshop.css">
+    <title>Eindoefening: Plantenshop</title>
+</head>
+<body>
+    <header>
+        <h1>De Plantenshop</h1>
+        <p>een oefening HTML-CSS voor de basisopleiding</p>
+    </header>
+    <div class="navigatie">
+        <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="plantenshop.html">Shop</a></li>
+            <li><a href="#">Verzorging</a></li>
+            <li><a href="#">Galerij</a></li>
+            <li><a href="#">Over ons</a></li>
+        </ul>
+        </nav>
+    </div>
+    <main>
+    <div class="subtitelbalk">
+        <h2>Online shop</h2>
+        <p>maak hier uw aankopen</p>
+    </div>
+    <div class="figuur">
+        <img src="img/flowers_1024_400.jpg" alt="afbeelding van bloemen">
+    </div>
+    <div class="zoekformulier">
+        <h2>Zoeken</h2>
+        <p>zoek een plant die past voor uw tuin</p>
+        <form action="js_form_ontvanger.html" method="get">
+            <div class="linksform">
+            <label id="categorie">wat zoekt u?</label>
+            <select name="categorie" size="1">
+                <option value=" ">--kies een categorie--</option>
+                <option>bomen</option>
+                <option>struiken</option>
+                <option>bloemen</option>
+                <option>vaste planten</option>
+            </select><br>
+            <label id="bodem">welke bodem?</label>
+            <select name="bodem" size="1">
+                <option value=" ">--kies een bodemsoort--</option>
+                <option>zandig</option>
+                <option>klei</option>
+                <option>leem</option>
+                <option>bosgrond</option>
+            </select><br>
+            <label id="standplaats">standplaats:</label>
+            <input type="radio" name="standplaats" value="zonnig"><label>zonnig</label>
+            <input type="radio" name="standplaats" value="halfshaduw"><label>halfshaduw</label>
+            <input type="radio" name="standplaats" value="schaduw"><label>schaduw</label><br>
+            <label id="seizoenlabel">bloeit in:</label>
+            <label>lente</label><input type="checkbox" name="seizoen" value="lente">
+            <label>zomer</label><input type="checkbox" name="seizoen" value="zomer">
+            <label>herfst</label><input type="checkbox" name="seizoen" value="herfst">
+            <label>winter</label><input type="checkbox" name="seizoen" value="winter"><br>
+            <input type="submit" value="zoek" id="zoekknop"><br>&nbsp;
+            </div>
+            <div class="rechtsform">
+            <label id="zoeklabel">zoek op naam:</label><input type="text" name="zoekterm" id="zoekterm">
+            </div>
+        </form>
+    </div>
+    </main>
+    <footer class="cf"> &copy; Copyright vdab</footer>
+</body>
+</html>

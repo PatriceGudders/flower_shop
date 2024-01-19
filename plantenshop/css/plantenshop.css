@@ -1,0 +1,136 @@
+/*rode kader rond containers*//*
+header, .navigatie, .subtitelbalk, .figuur, .zoekformulier, footer{
+    outline: 3px dotted red;
+}
+*/
+
+/*opmaak navigatiebalk*/
+nav ul{
+    list-style-type: none;
+}
+nav ul li{
+    padding: 0.5rem 0;
+}
+nav ul li a{
+    text-decoration: none;
+    font-family: monospace;
+    color: white;
+}
+nav ul li a:active{
+    color: lightblue;
+}
+
+
+/*tekstkleuren*/
+h1{
+    color: red;
+}
+h2{
+    color: green;
+}
+
+
+/*typografie*/
+body{
+    font-family: Arial;
+}
+h1, header p{
+    font-family: Verdana;
+    text-align: right;
+    padding-right: 0.5rem;
+}
+.navigatie{
+    font-size: 150%;
+}
+h2, p{
+    text-align: left;
+    text-indent: 0.5rem;
+}
+footer{
+    text-align: center;
+}
+
+
+/*achtergrond*/
+body{
+    background-color: white;
+}
+header{
+    background-color: #f4f0ec;
+}
+.navigatie{
+    background-color: #898a74;
+}
+img{
+    width: 100%;
+    height: auto;
+    border-top: 16px solid #9370db;
+    border-bottom: 16px solid #9370db;
+}
+footer{
+    background-color: #cfcfc4;
+}
+
+
+/*containermarges*/
+body{
+    width: 1024px;
+    margin: 0 auto;
+}
+header{
+    display:grid;
+}
+footer{
+    display: grid;
+    padding: 0.5rem 0;
+}
+
+
+/*containerverdeling*/
+.navigatie{
+    width: 20%;
+    float: left;
+    height: 50rem;
+}
+.subtitelbalk, .figuur, .zoekformulier{
+    width: 80%;
+    float: right;
+}
+
+
+/*opmaak zoekformulier*/
+.linksform{
+    float: left;
+    padding: 0 2.5%;
+}
+.rechtsform{
+    float: right;
+    padding: 0 2.5%;
+}
+#categorie,#bodem,#standplaats,#seizoenlabel,#zoeklabel{
+    display: inline-block;
+    width: 6rem;
+    padding: 0.8rem 0;
+}
+#zoekknop{
+    position: relative;
+    left: 6.2rem;
+}
+select,#zoekterm{
+    width: 13rem;
+}
+
+
+/*clearfix*/
+.cf{
+    clear: both;
+}
+/*
+.clearFix::before,.clearFix::after{
+    content: " ";
+    display: table;
+}
+.clearFix::after{
+    clear: both;
+}
+*/
