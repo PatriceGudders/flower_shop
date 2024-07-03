@@ -21,4 +21,4 @@ De pagina is gemaakt in HTML en CSS.
 
 ## Voorbeeld
 
-![Voorbeeld](images/screen_plantenshop.png)
+![Voorbeeld](plantenshop/images/screen_plantenshop.png)
